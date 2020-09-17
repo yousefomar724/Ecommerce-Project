@@ -279,6 +279,33 @@ ul li:hover {color: #fff;}
 .copyright:hover {color: #fff;}
 /*--------------------End he Footer--------------------- */
 
+/*---------------Start of All products page---------------*/
+.row-2 {justify-content: space-between;margin: 70px auto 30px;}
+
+select {border: 1px solid #ff523b;padding: 5px;}
+
+select:focus {outline: none;}
+/* to solve the proplem of color change when option change */
+
+.page-btn {margin: 0 auto 80px;}
+
+span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+span:hover {background: #ff523b;color: #fff;}
+
+/*---------------end of All products page---------------*/
+
+
 /*---------------making the website responsive------------*/
 .menu-nav {width: 28px;margin-left: 20px;display: none;}
 
@@ -299,6 +326,10 @@ ul li:hover {color: #fff;}
     nav ul li a {color: #ffffff;}
 
     .menu-nav {display: block;cursor: pointer;}
+
+    .page-btn {margin-left: 35px;}
+
+    span {width: 35px;height: 35px;line-height: 35px;}
 }
 
 /*-----media query for less than 600 screen size ------*/
@@ -306,5 +337,9 @@ ul li:hover {color: #fff;}
     .row {text-align: center;}
 
     .col-2, .col-3, .col-4 {flex-basis: 100%;}
+
+    .page-btn {margin-left: 10px;}
+
+    span {width: 30px;height: 30px;line-height: 30px;}
 }
 
