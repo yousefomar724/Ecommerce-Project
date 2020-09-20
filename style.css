@@ -158,9 +158,15 @@ nav ul li a:hover {background: #ff523b;color: #ffffff;}
     cursor: pointer;
 }
 
-.col-4:hover {transform: translateY(-10px);}
+.col-4:hover {
+    transform: translateY(-10px);
+}
 
 .col-4 img {width: 100%;}
+
+.col-4 img:hover {
+    zoom: 2;
+}
 
 .col-4 p {font-size: 14px;}
 
@@ -305,6 +311,98 @@ span:hover {background: #ff523b;color: #fff;}
 
 /*---------------end of All products page---------------*/
 
+/*------------start of single product page---------------*/
+
+.single-product {margin-top: 80px;}
+
+.single-product .col-2 {padding: 20px;}
+
+.single-product .col-2 img {padding: 0px;}
+
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+    border-radius: 5px;
+}
+
+input:focus {outline: none;}
+
+.single-product .fa {color: #ff523b;margin-left: 10px;} 
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {flex-basis: 24%;cursor: pointer;}
+/*------------end of single product page---------------*/
+
+/*--------------start of cart items page-------------------*/
+
+.cart-page {margin: 80px auto;}
+
+table{width: 100%;border-collapse: collapse;}
+
+.cart-info {display: flex;flex-wrap: wrap;}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td{padding: 10px 5px;}
+
+td input{width: 40px;height: 30px;padding: 5px;}
+
+td a{
+    padding: 3px 6px;
+    background: #ff523b;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+td img {width: 120px;height: 120px;margin-right: 10px;}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 375px;
+}
+
+td:last-child{text-align: right;}
+
+th:last-child{text-align: right;}
+ 
+/*--------------end of cart items-------------------*/
+
+
 
 /*---------------making the website responsive------------*/
 .menu-nav {width: 28px;margin-left: 20px;display: none;}
@@ -330,6 +428,14 @@ span:hover {background: #ff523b;color: #fff;}
     .page-btn {margin-left: 35px;}
 
     span {width: 35px;height: 35px;line-height: 35px;}
+
+    .single-product .col-2 {padding: 20px 0;}
+
+    .single-product h1 {font-size: 26px;line-height: 32px;}
+
+    .row-2 h1 {font-size: 22px;}
+
+    .row-2 p {font-size: 14px;}
 }
 
 /*-----media query for less than 600 screen size ------*/
@@ -341,5 +447,9 @@ span:hover {background: #ff523b;color: #fff;}
     .page-btn {margin-left: 10px;}
 
     span {width: 30px;height: 30px;line-height: 30px;}
+
+    .single-product .col-2 {padding: 20px 0;}
+
+    .single-product h1 {font-size: 26px;line-height: 32px;}
 }
 
