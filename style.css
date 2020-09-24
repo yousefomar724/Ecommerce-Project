@@ -32,7 +32,7 @@ p {color: #555555;}
 
 .logo img {width: 160px;cursor: pointer;transition: transform 0.5s;}
 
-.logo img:hover {transform: scale(1.2,1.2);}
+.logo img:hover {transform: scale(1.04,1.04);}
 
 nav {flex: 1;text-align: right;}
 
@@ -61,7 +61,7 @@ nav ul li a:hover {background: #ff523b;color: #ffffff;}
     transition: transform .5s ease;
 }
 
-.navbar .cart:hover {transform: scale(1.2,1.2);}
+.navbar .cart:hover {transform: scale(1.05,1.05);}
 
 /*--------------------end nav-bar----------------------------*/
 
@@ -79,9 +79,11 @@ nav ul li a:hover {background: #ff523b;color: #ffffff;}
     min-width: 300px;
 }
 
-.col-2 img {max-width: 100%;padding: 50px 0;}
+.text{padding-left: 40px;}
 
-.col-2 h1 {font-size: 50px;line-height: 60px;margin: 25px 0;}
+.col-2 img {max-width: 90%;padding: 40px 0;}
+
+.col-2 h1 {font-size: 45px;line-height: 50px;margin: 25px 0;}
 
 .btn {
     display: inline-block;
@@ -90,7 +92,7 @@ nav ul li a:hover {background: #ff523b;color: #ffffff;}
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
-    transition: background .5s ease;
+    transition: all .5s ease;
 }
 
 .btn:hover {background: #563434;}
@@ -107,22 +109,24 @@ nav ul li a:hover {background: #ff523b;color: #ffffff;}
     padding: 0 25px;
 }
 
-.col-3 {
-    flex-basis: 30%;
-    /* to set 3 columns */
-    min-width: 250px;
+.col-3-zoom {
+    display: flex;
+    height: 330px;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     cursor: pointer;
-}
-
-
-.col-3 img {
-    width: 100%;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-    transition: transform .3s ease;
 }
 
-.col-3 img:hover {transform: scale(1.1, 1.1);}
+.col-3-zoom figure {height: 330px;overflow: hidden;}
+
+.col-3-zoom img {
+    height: 330px;
+    transition: all .5s ease;
+}
+
+.col-3-zoom img:hover {transform: scale(1.05, 1.05);}
 
 /*--------------------end of categories-------------------*/
 
@@ -190,6 +194,23 @@ small {color: #555555;}
 
 /*-------------------start of testimonials------------------*/
 .testimonial {padding-top: 100px;}
+
+.col-3 {
+    flex-basis: 30%;
+    /* to set 3 columns */
+    min-width: 250px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+.col-3 img {
+    width: 100%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease;
+}
+
+.col-3 img:hover {transform: scale(1.05, 1.05);}
 
 .testimonial .col-3 {
     text-align: center;
@@ -402,7 +423,94 @@ th:last-child{text-align: right;}
  
 /*--------------end of cart items-------------------*/
 
+/*-------------start of account page-----------------*/
+.acc-page{background: radial-gradient(#fff, #ffd6d6);}
 
+.account-page{
+    padding: 50px 0;
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 83px;
+    display: inline-block;
+    border: none;
+}
+
+.form-container span:hover{background: none;}
+
+.form-btn{display: inline-block;}
+
+#indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform .7s ease-in-out;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform .7s ease-in-out;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{outline: none;}
+
+#loginForm{left: -300px;}
+#regForm{left: 0px;}
+
+.remember-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reme {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form a{font-size: 12px;}/* forgot password*/
+
+#chb {width: 14px;}
+form label{font-size: 12px;}
+
+/*-------------end of account page-----------------*/
 
 /*---------------making the website responsive------------*/
 .menu-nav {width: 28px;margin-left: 20px;display: none;}
