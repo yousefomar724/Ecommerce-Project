@@ -127,7 +127,7 @@ nav ul li a:hover {background: #ff523b;color: #ffffff;}
 
 .col-3-zoom img {
     height: 330px;
-    transition: all .5s ease;
+    transition: .5s;
 }
 
 .col-3-zoom img:hover {transform: scale(1.05, 1.05);}
